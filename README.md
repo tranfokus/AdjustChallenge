@@ -9,6 +9,15 @@ For the detail information about how to install Python (version 3) please take a
 ## General usage information
 To run the python script, follow these steps:
 1. Download the script and save to your PC
-2. Open a "Command Promt" (on Window PC) or "Terminal" (on MAC)
+2. Open a "Command Promt" (on Windows OS) or "Terminal" (on macOS)
 3. Run the command to change to the folder including the downloaded test1.py (in Step 1)
+macOS:
+```
+cd 
+```
+
+Windows:
+```
+cd 
+```
 4. Run the command: `python test1.py` or `python3 test1.py`
