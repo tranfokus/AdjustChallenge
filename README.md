@@ -17,6 +17,7 @@ If the script is in a different directory from which you are trying to run it, y
 ```
 python <full_path_to_script>
 ```
+Alternatively you can run the script online by using any common web browser. Please access (https://repl.it/languages/python3), copy content of 'test1.py' and paste into the 'main.py' window   
 
 ## Contact
 
