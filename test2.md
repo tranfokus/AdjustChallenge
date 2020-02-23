@@ -53,7 +53,7 @@ It should include following core services:
 
 ## Challenges
 With the propsed solution, there are several main challenges that can be briefly described as follows:
-* Data Collection: There are filebeat modules available for several popular "SSL offloading" software such as NGINX, Trafik. If the running software is not in the supported list, an extension to filebeat is required to implement. In both cases, we need to update/configure server to include related information in service access/error log files. As a result, we might not have all above mentioned specific metrics, if there is limited/incomplete information from such log files.     
+* Data Collection: We need to update/configure server to include related information in service access/error log files. Depend on which software solution running on the server (e.g. nginx, traffik, apache), we might have not all above mentioned specific metrics (as collected information are limited/incomplete).     
 
 * Performance: Running Beats log on the server will have some impact on the overal performance. The more information Beats collect, the more performance degradation the server has. Moreover, tranporting data over network to the centralized monitoring is subject to the delays and packet loss.
 
