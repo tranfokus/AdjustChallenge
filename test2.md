@@ -33,11 +33,12 @@ Error-related Metrics
 
 
 Dependance-related Metrics
+
 As a reverse proxy, this server needs other backend(upstream) servers for its functionality. As a result, related information from such servers are also importance for the monitoring (e.g. upstream servers status, active connection ...) 
 
 
 ## Proposed Solution
-'''Enabling/Deploying Elastic Beats on the SSL offload server to send monitoring information to a central ELK Stack monitoring system'''
+```Enabling/Deploying Elastic Beats on the SSL offload server to send monitoring information to a central ELK Stack monitoring system```
 
 ### Beats on the SSL offload server
 * Metricbeat: Allows the collection of related generic metrics
