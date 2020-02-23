@@ -59,4 +59,4 @@ With the propsed solution, there are several main challenges that can be briefly
 
 * Security and Privacy: Such system increases attack surface. The communication between server and central monitoring system needs to be protected (e.g. by encryption). Moreover, selected information for monitoring (log) might need to take into consideration related privacy protection regulations such as GDPR ...   
 
-* Cost: Budget and time is required for maintaing/purchase a central monitoring system, experts to resolve issues.  
+* Cost: Budget and time are required for maintaing/purchase such monitoring system, experts to manage/resolve issues.  
