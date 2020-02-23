@@ -53,7 +53,7 @@ It should include following core services:
 
 ## Challenges
 With the propsed solution, there are several main challenges that can be briefly described as follows:
-* Data Collection: We need to update/configure server to include related information in service access/error log files. Depend on which software solution running on the server (e.g. nginx, traffik, apache), we might have not all above mentioned specific metrics (as collected information are limited/incomplete).     
+* Data Collection: We need to update/configure server to include related information in service access/error log files. Depend on which software solution running on the server (e.g. nginx, traffik, apache), we might have not all above mentioned specific metrics (as received information are limited/incomplete).     
 
 * Performance: Running Beats log on the server will have some impact on the overal performance. The more information Beats collect, the more performance degradation the server has. Moreover, tranporting data over network to the centralized monitoring is subject to the delays and packet loss.
 
