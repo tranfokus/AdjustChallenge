@@ -16,7 +16,7 @@ There are different metrics including some common ones as follows:
 ...
 
 ### Service Specific Metrics
-As this server is used for SSL offloading, following metrics should be taken into consideration:
+As this server is used for SSL offloading, following monitoring metrics are important:
 
 Performance-related Metrics
 * Service Inbound traffic (bytes)
@@ -52,14 +52,12 @@ It should include following core services:
 * ElastAlert (Alert)
 
 
-
-
 ## Challenges
 With the propsed solution, there are several main challenges that can be briefly describes as follows:
-* Data Collection: There are filebeat modules available for several popular "SSL offloading" software such as NGINX, Trafik. If the server running software is not in the supported list, an extension to filebeat is required to implement. In both cases, we need to update service server to include related information in its access/error log files. As a result, we might not have all above mentioned specific metrics, if there is limited information from received log.     
+* Data Collection: There are filebeat modules available for several popular "SSL offloading" software such as NGINX, Trafik. If the running software is not in the supported list, an extension to filebeat is required to implement. In both cases, we need to update/configure server to include related information in service access/error log files. As a result, we might not have all above mentioned specific metrics, if there is limited/incomplete information from such log files.     
 
-* Performance: Running Beats log on the server will have some impact on the overal performance. The more information Beats collect, the more impact the server has. Moreover, tranporting data over network to the centralized monitoring is subject to the delays and packet loss.
+* Performance: Running Beats log on the server will have some impact on the overal performance. The more information Beats collect, the more performance degradation the server has. Moreover, tranporting data over network to the centralized monitoring is subject to the delays and packet loss.
 
-* Security and Privacy: Such system increases attack surface. The communication between server and central monitoring system needs to be protected (e.g. by encryption). Collected information for monitoring should be take into consideration related privacy protection regulations such as GDPR ...   
+* Security and Privacy: Such system increases attack surface. The communication between server and central monitoring system needs to be protected (e.g. by encryption). Moreover, selected information for monitoring (log) might need to take into consideration related privacy protection regulations such as GDPR ...   
 
-* Cost: Budget for maintaing/purchase a central monitoring system, experts to resolve issues.  
+* Cost: Budget and time is required for maintaing/purchase a central monitoring system, experts to resolve issues.  
