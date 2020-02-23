@@ -21,8 +21,8 @@ or
 ```
 python3 <full_path_to_script>
 ```
-Alternatively you can run the script online by using any common web browser. Please access (https://repl.it/languages/python3), copy content of 'test1.py' and paste into the 'main.py' window   
+Alternatively, you can run/test the script online by using any common web browser. Please access (https://repl.it/languages/python3), copy content of 'test1.py', paste into the 'main.py' window and run it.  
 
 ## Contact
 
-If you want to contact me you can reach me at tranfokus@gmail.com
+You can reach me at tranfokus@gmail.com for any further information.
