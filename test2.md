@@ -51,4 +51,11 @@ Core components:
 
 
 
-## Chalenges
+## Challenges
+With the propsed solution, there are several main challenges that can be briefly describes as follows:
+* Data Collection: Filebeat
+
+* Performance
+Tranporting data over network to the centralized monitoring is subject to the delays and packet loss
+
+* Cost: 
