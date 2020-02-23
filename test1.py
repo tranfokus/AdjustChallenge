@@ -11,6 +11,6 @@ while len(in_list) > 0:
     out_list.append(in_list[random_postion])            
     del in_list[random_postion]
 
-# print the result from out_list one line  
+# print the result from out_list in one line  
 print(' '.join(map(str, out_list))) 
 
