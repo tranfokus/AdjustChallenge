@@ -1,5 +1,5 @@
 # python program to print the number from 1 to 10 in random number
-# on-line test at https://repl.it/languages/python3
+# test at https://repl.it/languages/python3
 import random
 
 in_list = [x for x in range(1,11)] # create a list with number from 1 to 10
