@@ -1,4 +1,4 @@
-# Python Scripts
+# Coding Challenge
 
 test1.py is a python program to print the number from 1 to 10 in random number.
 
