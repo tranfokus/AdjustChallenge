@@ -51,7 +51,6 @@ It should include following core services:
 * Kibana (Dashboard)
 * ElastAlert (Alert)
 
-
 ## Challenges
 With the propsed solution, there are several main challenges that can be briefly describes as follows:
 * Data Collection: There are filebeat modules available for several popular "SSL offloading" software such as NGINX, Trafik. If the running software is not in the supported list, an extension to filebeat is required to implement. In both cases, we need to update/configure server to include related information in service access/error log files. As a result, we might not have all above mentioned specific metrics, if there is limited/incomplete information from such log files.     
