@@ -17,7 +17,8 @@ There are varios metrics including some common ones as follows:
 
 ### Service Specific Metrics
 As this server is used for SSL offloading, there are three types of metrics should be taken into consideration:
-####Performance-related Metrics
+
+Performance-related Metrics
 * Service Inbound traffic (bytes)
 * Service Outbound traffic (bytes)
 
@@ -25,15 +26,29 @@ As this server is used for SSL offloading, there are three types of metrics shou
 * Request Duration/Time (ms)
 
 * Number of active connection 
-####Error-related Metrics
+
+Error-related Metrics
 * Number of drop connection
 * Error Rate (%): is equal number of 5xx errors divided by total number of status codes
 
-####Dependance-related Metrics
-Monitoring information of backend(upstream) servers such as status, active connection ... 
+
+Dependance-related Metrics: Monitoring information related to backend(upstream) servers such as status, active connection ... 
 
 
 ## Solution
+Enabling/Deploying Elastic Beats on the SSL offload server to send monitoring information to a central ELK Stack monitoring system.
+### Beats on the SSL offload server
+* Metricbeat: Allows the collection of related generic metrics
+* Filebeat: Allows the collection, parsing and sending of service specific log files (access log, error log)
+
+### Monitoring System
+Core components:
+* Logstash (Collection)
+* Elasticsearch (Processing, Storage, Query)
+* Kibana (Dashboard)
+* ElastAlert (Alert)
+...
+
 
 
 ## Chalenges
