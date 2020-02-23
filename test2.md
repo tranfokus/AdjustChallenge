@@ -7,13 +7,13 @@
 For this server, two groups of monitoring information are often taken into account: 'Host/Server generic' and 'Application/Service specific'
 
 ### Host Generic Metrics
-There are different metrics including some common ones as follows:
+At least, following metrics are taken into account:
 * CPU Usage (%)
 * Memory Usage (%)
 * Disk Usage (%)
 * Number of Threads
 * Inbound/Outbound traffic per Network Interfaces (Mbps)
-...
+
 
 ### Service Specific Metrics
 As this server is used for SSL offloading, following monitoring metrics are important:
